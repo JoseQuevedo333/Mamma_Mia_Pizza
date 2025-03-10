@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const total = 0;
@@ -11,12 +12,10 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <button
-          className="navbar-brand btn btn-outline-secondary me-2"
-          href="#"
-        >
+        <Link to="/" className="navbar-brand btn btn-outline-secondary me-2">
           🍕 Home
-        </button>
+        </Link>
+
         <div className="d-flex">
           {token ? (
             <>
@@ -27,10 +26,16 @@ function Navbar() {
             </>
           ) : (
             <>
-              <button className="btn btn-outline-primary me-2">🔐 Login</button>
-              <button className="btn btn-outline-secondary me-2">
+              <Link to="/LoginSheet" className="btn btn-outline-primary me-2">
+                🔐 Login
+              </Link>
+
+              <Link
+                to="/RegisterSheet"
+                className="btn btn-outline-secondary me-2"
+              >
                 🔐 Register
-              </button>
+              </Link>
             </>
           )}
           <button className="btn btn-outline-warning">
