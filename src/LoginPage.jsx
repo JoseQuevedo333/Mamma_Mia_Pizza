@@ -31,7 +31,7 @@ const LoginPage = () => {
           <input
             type="email"
             name="email"
-            className="login-control"
+            className="login-control row align-items-center"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -41,12 +41,12 @@ const LoginPage = () => {
           <input
             type="password"
             name="password"
-            className="login-control"
+            className="login-control row align-items-center"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit" className="login-btn">
+        <button type="submit" className="login-btn btn btn-success">
           Ingresar
         </button>
       </form>

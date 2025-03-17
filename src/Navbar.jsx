@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const total = 0;
   const token = false;
 
   const formatTotal = (amount) => {
@@ -38,9 +37,9 @@ function Navbar() {
               </Link>
             </>
           )}
-          <button className="btn btn-outline-warning">
-            🛒 Total: ${formatTotal(total)}
-          </button>
+          <Link to="/CartSheet" className="btn btn-outline-warning">
+            🛒 Carrito
+          </Link>
         </div>
       </div>
     </nav>

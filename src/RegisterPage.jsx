@@ -39,7 +39,7 @@ const RegisterPage = () => {
           <input
             type="email"
             name="email"
-            className="register-control"
+            className="register-control row align-items-center"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -49,7 +49,7 @@ const RegisterPage = () => {
           <input
             type="password"
             name="password"
-            className="register-control"
+            className="register-control row align-items-center"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -59,12 +59,12 @@ const RegisterPage = () => {
           <input
             type="password"
             name="confirmPassword"
-            className="register-control"
+            className="register-control row align-items-center"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </div>
-        <button type="submit" className="register-btn">
+        <button type="submit" className="register-btn btn btn-success">
           Registrar
         </button>
       </form>
